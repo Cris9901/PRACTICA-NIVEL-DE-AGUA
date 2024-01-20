@@ -119,7 +119,7 @@ delay (2000);
 
 ## Resultados
 Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
-![]()
+![](https://github.com/Cris9901/PRACTICA-NIVEL-DE-AGUA/blob/main/IMAGEN%203.jpg)
 
 # Créditos
 Desarrollado por Ing. Montañez Mejia Cristian
