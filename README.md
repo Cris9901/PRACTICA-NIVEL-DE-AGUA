@@ -109,7 +109,7 @@ delay (2000);
 3. Hacer la conexion de **HC-SR04** con la **ESP32** como se muestra en la siguente imagen.
 ![](https://github.com/Cris9901/PRACTICA-NIVEL-DE-AGUA/blob/main/IMAGEN%201.jpg)
 4. Hacer la conexion del **LED** y el **Resistor** con la **ESP32** como se muestra en la siguente imagen.
-![]()
+![](https://github.com/Cris9901/PRACTICA-NIVEL-DE-AGUA/blob/main/IMAGEN%202.jpg)
 
 ### Instrucciónes de operación
 1. Iniciar simulador.
