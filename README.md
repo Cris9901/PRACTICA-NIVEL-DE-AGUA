@@ -63,23 +63,37 @@ duration = pulseIn(echoPin, HIGH);
 distance= duration*0.034/2;
 
 safetyDistance = distance;
-if (safetyDistance>=2 && safetyDistance<=5)
+if (safetyDistance>=10 && safetyDistance<=100)
 {
   digitalWrite(led1, HIGH);
   digitalWrite(led2, LOW);
   digitalWrite(led3, LOW);
   digitalWrite(led4, LOW);
 }
-else if(safetyDistance>=5 && safetyDistance<=10) 
+else if(safetyDistance>=100 && safetyDistance<=200) 
 {
   digitalWrite(led1, HIGH);
   digitalWrite(led2, HIGH);
   digitalWrite(led3, LOW);
   digitalWrite(led4, LOW);
 }
+else if(safetyDistance>=200 && safetyDistance<=300) 
+{
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  digitalWrite(led3, HIGH);
+  digitalWrite(led4, LOW);
+}
+else if(safetyDistance>=300 && safetyDistance<=400) 
+{
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  digitalWrite(led3, HIGH);
+  digitalWrite(led4, HIGH);
+}
 else
 {
- digitalWrite(led1,  LOW);
+  digitalWrite(led1, LOW);
   digitalWrite(led2, LOW);
   digitalWrite(led3, LOW);
   digitalWrite(led4, LOW);
@@ -94,11 +108,14 @@ delay (2000);
 2. Es importante mencionar que para esta practica en particular no se necesita instalar ninguna libreria.
 3. Hacer la conexion de **HC-SR04** con la **ESP32** como se muestra en la siguente imagen.
 ![]()
-4. Hacer la conexion del **LED** y el **Resisyor** con la **ESP32** como se muestra en la siguente imagen.
+4. Hacer la conexion del **LED** y el **Resistor** con la **ESP32** como se muestra en la siguente imagen.
 ![]()
+
 ### Instrucciónes de operación
 1. Iniciar simulador.
 2. Visualizar los datos en el monitor serial.
+3. Colocar la distancia dando doble click al sensor ULTRASONICO.
+4. Observar cuando se encienda los indicadores LED con el cambio de distancias.
 
 ## Resultados
 Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
